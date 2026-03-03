@@ -7,6 +7,7 @@
     <title>Snack Alhan</title>
     <link rel="stylesheet" href="style/styles.css">
     <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/slideshow.css">
 </head>
 
 <body>
@@ -28,21 +29,85 @@
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
         </nav>
-    <main>
+    <main class="homemain">
+
         <section class="home">
             <h2>Welkom bij Snack Alhan!</h2>
+            <hr>
             <p>Bij Snack Alhan serveren we de lekkerste snacks en frieten in de stad. Onze passie voor kwaliteit en smaak zorgt ervoor dat elke hap een genot is. Of je nu zin hebt in een klassieke frikandel, een krokante kroket of een portie heerlijke frieten, bij ons ben je aan het juiste adres. Kom langs en proef het verschil!</p>
         </section>
-        <section><h2>Onze Doel</h2>
+        <section class="home">
+            <h2>Bicky Doner</h2>
+            <hr>
+            <video controls>
+                <source src="vid/BickyDoner.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section>
+            <h2>Onze Doel</h2>
+            <hr>
         <p>Ons doel is om de beste snacks en frieten te serveren met een focus op kwaliteit, smaak en klanttevredenheid. We streven naar duurzaamheid en innovatie in onze productieprocessen, zodat we elke klant een unieke ervaring kunnen bieden.</p>
         </section>
         <section><h2>Opening</h2>
+            <hr>
         <p>Snack Alhan is geopend in mei 2025 en we zijn nog altijd actief aan het investeren in nieuwe apparatuur en materieel. Ons doel is om de ervaring van onze klanten constant te verbeteren en ze de beste service mogelijk te bieden.</p></section>
-    
+                <section>
+            <h2>Onze aanbod</h2>
+            <hr>
+            <!-- This slideshow was taken from this website: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="/img/Durum.JPG" style="width:100%">
+                    <div>Durum</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="/img/Smash.JPG" style="width:100%">
+                    <div>Smash</div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="/img/Tacos.JPG" style="width:100%">
+                    <div>Tacos</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
     </main>
     <footer>
         <p>&copy; 2026 Furkan Alhan. Alle rechten voorbehouden.</p>
     </footer>
 </body>
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
 
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
 </html>

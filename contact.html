@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack Alhan</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/form.css">
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h1>SNACK</h1>
+            <h1>ALHAN</h1>
+        </div>
+    </header>
+    <!-- header ends here because sticky nav is not working if I put the nav in it-->
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li class="divider">|</li>
+            <li><a href="/roadmap.html">Roadmap</a></li>
+            <li class="divider">|</li>
+            <li><a href="/about.html">Over ons</a></li>
+            <li class="divider">|</li>
+            <li><a class="active" href="/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="contactmain">                  
+        <section class="contactgegevens">
+            <h2>Contactgegevens</h2>
+            <hr>
+            <ul>
+                <li>Adres: Stationsstraat 123, 3500 Hasselt</li>
+                <li>Telefoon: +32 123 45 67 89</li>
+                <li>Email: Snackalhan@gmail.com</li>
+            </ul>
+        </section>
+        <section class="map-container">
+            <h2>Ligging</h2>
+            <hr>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5046.369256430239!2d4.534030137170662!3d50.77215095350118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3d987921e0083%3A0xd7d73805f58c716d!2sSnack%20Alhan!5e0!3m2!1sfr!2sbe!4v1772458335941!5m2!1sfr!2sbe" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="openingsuren">
+            <h2>Openingsuren</h2>
+            <hr>
+            <ul>
+                <li>Maandag: Gesloten</li>
+                <li>Dinsdag: 11:30 - 22:00</li>
+                <li>Woensdag: 11:30 - 22:00</li>
+                <li>Donderdag: 11:30 - 22:00</li>
+                <li>Vrijdag: 11:30 - 22:00</li>
+                <li>Zaterdag: 11:30 - 22:00</li>
+                <li>Zondag: 11:30 - 22:00</li>
+            </ul>
+        </section>
+        <section class="form-container">
+            <h2>Contact Formulier</h2>
+            <hr>
+            <form action="/submit_contact" method="GET">
+                <label for="name">Naam</label><br>
+                <input type="text" id="name" name="name" placeholder="Alhan" required><br><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="snackalhan@gmail.com" required><br><br>
+                <label for="message">Bericht</label><br>
+                <textarea id="message" name="message" rows="4" placeholder="Een bericht van hoe mooi de eigenaar is." required></textarea><br><br>
+                <input type="submit" value="Verzenden">
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 Furkan Alhan. Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+
+</html>

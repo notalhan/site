@@ -1,0 +1,33 @@
+input,
+textarea {
+    font-family: inherit;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.5s, box-shadow 0.5s;
+    width: 90%;
+    text-align: center;
+    font-size: 1.1rem;
+}
+input[type="submit"] {
+    background-color: rgb(130, 1, 1);
+    color: white;
+    border: none;
+    cursor: pointer;}
+
+textarea[name="message"] {
+    resize: vertical;
+    min-height: 25vh;
+}
+input:hover,
+textarea:hover {
+    border-color: rgb(130, 1, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+input:focus,
+textarea:focus {
+    border-color: rgb(130, 1, 1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
