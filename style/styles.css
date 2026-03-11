@@ -35,12 +35,117 @@ object-fit: cover;
     list-style: none;
 }
 
+/* Rating made my AI but made in a way that I understand it like fade up fade down animation gone by putting opacity to 0 and opacity 1 with fade up
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+*/
+.ratings-section {
+  padding: 40px 24px;
+}
+.rating-card-link{
+      text-decoration: none;
+  color: inherit;
+}
+
+.ratings-cards {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.rating-card {
+  position: relative;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255, 160, 50, 0.25);
+  border-radius: 16px;
+  padding: 32px 40px;
+  text-align: center;
+  min-width: 180px;
+}
+
+.card-glow {
+  position: absolute;
+  inset: -1px;
+  border-radius: 16px;
+  background: radial-gradient(ellipse at 50% 0%, rgba(255,160,40,0.12), transparent 70%);
+  pointer-events: none;
+}
+
+.platform-icon {
+  margin: 0 auto 12px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.platform-name {
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #ff9a2e;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.score {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #ff9a2e;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.stars-row {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+}
+
+.star {
+  font-size: 1.3rem;
+  color: #ff9a2e;
+}
+
+.star.half {
+  position: relative;
+  color: rgba(255,154,46,0.25);
+}
+
+.star.half::before {
+  content: '★';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  overflow: hidden;
+  color: #ff9a2e;
+}
+
+
+/* ::::::::::::::::::::BIG SCREEN:::::::::::::::::::::::::*/
+/* ::::::::::::::::::::BIG SCREEN:::::::::::::::::::::::::*/
+/* ::::::::::::::::::::BIG SCREEN:::::::::::::::::::::::::*/
+/* ::::::::::::::::::::BIG SCREEN:::::::::::::::::::::::::*/
+/* ::::::::::::::::::::BIG SCREEN:::::::::::::::::::::::::*/
+/* ::::::::::::::::::::BIG SCREEN:::::::::::::::::::::::::*/
+/* ::::::::::::::::::::BIG SCREEN:::::::::::::::::::::::::*/
+/* ::::::::::::::::::::BIG SCREEN:::::::::::::::::::::::::*/
+/* ::::::::::::::::::::BIG SCREEN:::::::::::::::::::::::::*/
 
 @media (min-width: 768px) {
-.homemain {
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 1200px;
+main{
+        max-width: 1200px;
     width: 80%;
+}
+    .homemain {
+    grid-template-columns: repeat(3, 1fr);
 }
 .homemain section:nth-child(1) {
     grid-column: span 2;
@@ -59,23 +164,72 @@ object-fit: cover;
     grid-column: span 3;
 }
 
-
+.aboutmain {
+    grid-template-columns: repeat(3, 1fr);
+}
+.aboutmain section:nth-child(1){
+    grid-column: span 3;
+}
+.aboutmain section:nth-child(2){
+    grid-row: span 2;
+}
+.aboutmain section:nth-child(3){
+    grid-column: span 2;
+}
+.aboutmain section:nth-child(4){
+    grid-column: span 2;
+}
+.aboutmain section:nth-child(5){
+    grid-column: span 3;
+}
 .contactmain{
     grid-template-columns: repeat(4, 1fr);
     max-width: 1200px;
     width: 80%;
 }
 .contactmain .contactgegevens {
-    grid-column: span 1;
+    grid-column: span 2;
 }
 .contactmain .map-container {
-    grid-column: span 3;
-    grid-row: 1 / span 2;
+    grid-column: span 4;
+    grid-row: 2 / span 2;
 }
 .contactmain .openingsuren {
-    grid-column: span 1;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
 }
 .contactmain .form-container {
     grid-column: span 4;
+}
+
+.openingsuren ul{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.5rem;
+}
+.openingsuren li:first-child{
+    grid-column: span 2;
+
+}
+.openingsuren li{
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #fff6f6;
+    padding: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contactgegevens ul{
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 1rem;
+    background-color: #fff6f6;
+    padding: 1rem;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    height: 100%
+}
+.contactgegevens li{
+    font-weight: bold;
 }
 }

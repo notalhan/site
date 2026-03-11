@@ -20,14 +20,17 @@ textarea[name="message"] {
     resize: vertical;
     min-height: 25vh;
 }
+/* BUG: when hovered on placeholder, mouse pointer changes to white even on white background */
 input:hover,
 textarea:hover {
     border-color: rgb(130, 1, 1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff6f6;
 }
 input:focus,
 textarea:focus {
     border-color: rgb(130, 1, 1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     outline: none;
+    background-color: #fff6f6;
 }
