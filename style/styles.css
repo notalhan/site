@@ -164,6 +164,42 @@ main{
     grid-column: span 3;
 }
 
+.menumain {
+    grid-template-columns: repeat(3, 1fr);
+}
+.menumain section:nth-child(1) {
+    grid-column: span 2;
+}
+.menumain section:nth-child(2) {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.menumain section:nth-child(3) {
+    grid-column: span 2;
+}
+.menumain section:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+.menumain section:nth-child(5) {
+    grid-column: span 1;
+    grid-row: 3 / span 2;
+}
+.menumain section:nth-child(6) {
+    grid-column: span 2;
+} 
+.menumain section:nth-child(7) {
+    grid-column: span 3;
+}
+.menumain section:nth-child(8) {
+    grid-column: span 1;
+}
+.menumain section:nth-child(9) {
+    grid-column: span 1;
+}
+
+
+
+
 .aboutmain {
     grid-template-columns: repeat(3, 1fr);
 }
