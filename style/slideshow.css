@@ -11,8 +11,8 @@
 }
 
 .mySlides img {
-object-fit: cover;
-max-height: 50vh;
+object-fit:scale-down;
+height: 50vh;
 display: block;
 width: 100%;
 border-radius: 10px;

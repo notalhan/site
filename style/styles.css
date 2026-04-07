@@ -35,7 +35,22 @@ object-fit: cover;
     list-style: none;
 }
 
-/* Rating made my AI but made in a way that I understand it like fade up fade down animation gone by putting opacity to 0 and opacity 1 with fade up
+#online-bestellen img{
+    width: 50px;
+}
+
+#takeaway-link{
+    color: rgb(230, 130, 0);
+    text-shadow: 1px 1px 1px rgba(255, 123, 0, 0.5);
+    text-decoration: none;
+}
+#ubereats-link{
+    color: rgb(0, 200, 0);
+    text-shadow: 1px 1px 1px rgba(0, 200, 0, 0.5);
+    text-decoration: none;
+}
+
+/* Rating made my AI but I changed in a way that I understand it ,like fade up fade down animation gone by putting opacity to 0 and opacity 1 with fade up
 
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(16px); }
@@ -196,8 +211,10 @@ main{
 .menumain section:nth-child(9) {
     grid-column: span 1;
 }
+.menumain section:nth-child(10) {
+    grid-column: span 1;
 
-
+}
 
 
 .aboutmain {
@@ -257,15 +274,17 @@ main{
 }
 .contactgegevens ul{
     display: grid;
-    grid-template-rows: repeat(1, 1fr);
     gap: 1rem;
-    background-color: #fff6f6;
-    padding: 1rem;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    height: 100%
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0.5rem;
 }
 .contactgegevens li{
     font-weight: bold;
+    padding: 0.5rem;
+}
+.contactgegevens li a{
+    color: rgb(255, 24, 24);
+    text-shadow: 1px 1px 5px rgba(255, 0, 0, 0.5);
+    text-decoration: none;
 }
 }

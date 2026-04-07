@@ -40,15 +40,7 @@ nav ul {
     display: flex;
     justify-content: space-evenly;
 }
-nav ul .divider {
-    color: lightgray;
-    font-size: 1.5rem;
-}
 nav ul li {
-    display: flex;
-    align-items: center;
-}
-nav ul li:nth-child(odd) {
     display: flex;
     align-items: center;
     flex: 1;
@@ -73,6 +65,7 @@ nav ul li a:hover{
     background-color: rgba(73, 100, 68, 0.224);
     box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
     font-size: 1.1rem;
+    text-shadow: 1px 1px 20px rgba(255, 0, 0, 0.5);
     border: 1px solid lightgray;
 }
 footer {
