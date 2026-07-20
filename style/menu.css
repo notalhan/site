@@ -1,11 +1,18 @@
-.prijs {
+#prijs {
     font-weight: bold;
     color: rgb(255, 24, 24);
-    text-shadow: 1px 1px 5px rgba(255, 0, 0, 0.5);
-}   
+    text-shadow: 1px 1px 10px rgba(255, 0, 0, 0.5);
+} 
+section p {
+    text-align: left;
+}
+.prijs{
+    text-align: right;
+}
 section {
     margin-bottom: 1em;
 }
+
 section p {
     margin: 1em 0;
 }

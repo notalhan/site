@@ -11,20 +11,20 @@
 </head>
 
 <body>
-    <header>
-        <div class="title">
-            <h1>SNACK</h1>
-            <h1>ALHAN</h1>
-        </div>
-    </header>
     <nav>
         <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a class="active" href="/menu.html">Menu</a></li>
-            <li><a href="/about.html">Over ons</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="menu.html">Menu</a></li>
+            <li><a href="about.html">Over ons</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
+
     </nav>
+    <!-- <header>
+        <div class="banner">
+
+        </div>
+    </header> -->
 
     <main class="menumain">
 
@@ -33,8 +33,8 @@
             <hr>
             <p>Een volledige maaltijd op bord. Gemengde salade, vers gebakken frieten en vlees naar keuze. Saus naar
                 keuze apart zodat alles krokant blijft.</p>
-            <p>Begint aan <span class="prijs">€ 10,00</span></p>
-        </section>
+            <p class="prijs">Begint aan <span id="prijs">€ 10,00</span></p>
+            </section>
 
         <section>
             <h2>Mitraillettes</h2>
@@ -42,9 +42,8 @@
             <p>Frans brood met dunne krokante korst, rijk gevuld met salade, frieten en vlees naar keuze. Je kan 2
                 sauzen kiezen in je brood, extra saus komt apart.
             </p>
-            <p>Begint aan <span class="prijs">€ 6,50</span></p>
-            <p>Dit is de perfecte mix tussen prijs en kwantiteit. 100% na deze brood je vol zan zijn voor zo'n kleine
-                prijs!</p>
+            <p>Dit is de perfecte mix tussen prijs en kwantiteit. Tot vandaag niemand gezien dat nog honger was na dit brood!</p>
+            <p class="prijs">Begint aan <span id="prijs">€ 6,50</span></p>
         </section>
 
         <section>
@@ -52,7 +51,7 @@
             <hr>
             <p>Licht geroosterd pitabrood, rijk gevuld met salade, vlees naar keuze en frieten in het brood. Je kan 2
                 sauzen kiezen in je brood, extra saus komt apart.</p>
-            <p>Begint aan <span class="prijs">€ 6,50</span></p>
+            <p class="prijs">Begint aan <span id="prijs">€ 6,50</span></p>
         </section>
 
         <section>
@@ -60,7 +59,7 @@
             <hr>
             <p>Warme wrap, kort gegrild, rijk gevuld met salade, vlees naar keuze en frieten in de wrap. Je kan 2 sauzen
                 kiezen in je wrap, extra saus komt apart.</p>
-            <p>Begint aan <span class="prijs">€ 6,50</span></p>
+            <p class="prijs">Begint aan <span id="prijs">€ 6,50</span></p>
         </section>
 
         <section>
@@ -70,7 +69,7 @@
                 je burger, extra saus komt apart.</p>
 
             <p>We maken ook de Smash Alhan Burger met deze bicky's, je zou het MOETEN proberen!</p>
-            <p>Begint aan <span class="prijs">€ 4,50</span></p>
+            <p class="prijs">Begint aan <span id="prijs">€ 4,50</span></p>
         </section>
 
         <section>
@@ -78,7 +77,7 @@
             <hr>
             <p>Een bodem van frieten met saus erop, daarboven gesmolten mozzarella met het vlees dat u kiest, afgewerkt
                 met salade naar keuze.</p>
-            <p>Begint aan <span class="prijs">€ 10,00</span></p>
+            <p class="prijs">Begint aan <span id="prijs">€ 10,00</span></p>
         </section>
 
         <section>
@@ -86,29 +85,38 @@
             <hr>
             <p>Klassieke French Tacos, durum broodje met uw favoriete saus en speciale tacos saus met frieten en het
                 gekozen vlees. Durum wordt helemaal opgerold zodat het helemaal afgesloten is.</p>
-            <p>Begint aan <span class="prijs">€ 10,00</span></p>
+            <p class="prijs">Begint aan <span id="prijs">€ 10,00</span></p>
         </section>
 
         <section>
             <h2>Snacks</h2>
             <hr>
-            <p>Er zijn meerdere soorten snacks beschikbaar. Van een chickenfingers naar tenders, van Falafel naar kippenbouten.</p>
+            <p>Er zijn meerdere soorten snacks beschikbaar. Van een chickenfingers naar tenders, van Falafel naar
+                kippenbouten.</p>
             <p>Als je alle snacks wilt weten, kom maar langs!</p>
-            <p>Begint aan <span class="prijs">€ 2,50</span></p>
+            <p class="prijs">Begint aan <span id="prijs">€ 2,50</span></p>
         </section>
         <section>
             <h2>Desserts</h2>
             <hr>
             <p>Heerlijke desserten, meerdere soorten tiramisu's: Bueno, Oreo, Speculoos.</p>
-            <p>We hebben nu ook "Daim-Taart". Het is net binnen maar is het taart dat het meest gehouden is door klanten.</p>
-            <p>Begint aan <span class="prijs">€ 4,50</span></p>
+            <p>We hebben nu ook "Daim-Taart". Het is net binnen maar is het taart dat het meest gehouden is door
+                klanten.</p>
+            <p class="prijs">Begint aan <span id="prijs">€ 4,50</span></p>
         </section>
 
         <section id="online-bestellen">
             <h2>Online Bestellen</h2>
             <hr>
-            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Just_Eat_Takeaway.com_icon_logo.svg/1920px-Just_Eat_Takeaway.com_icon_logo.svg.png" alt="Takeaway.com" ><p>Bestel online via <a id="takeaway-link" href="https://www.takeaway.com/be-fr/menu/snack-alhan">Takeaway.com</a></p>
-            <img src="https://www.freelogovectors.net/wp-content/uploads/2022/10/uber_eats_logo-freelogovectors.net_.png" alt="Uber Eats" ><p>Bestel online via <a id="ubereats-link" href="https://www.ubereats.com/be/store/snack-alhan/9Bjvm1GnXeSIONvg3aSERA?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMkhhYWNodHNlc3RlZW53ZWclMjA0NCUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMkNoSUpoODFTcER6ZHcwY1JMbXUzU3NyN3VldyUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJnb29nbGVfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E1MC44OTc3NTA1JTJDJTIybG9uZ2l0dWRlJTIyJTNBNC40MzU4ODE5OTk5OTk5OTklN0Q%3D&ps=1">Uber Eats</a></p>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Just_Eat_Takeaway.com_icon_logo.svg/1920px-Just_Eat_Takeaway.com_icon_logo.svg.png"
+                alt="Takeaway.com">
+            <p>Bestel online via <a id="takeaway-link"
+                    href="https://www.takeaway.com/be-fr/menu/snack-alhan">Takeaway.com</a></p>
+            <img src="https://www.freelogovectors.net/wp-content/uploads/2022/10/uber_eats_logo-freelogovectors.net_.png"
+                alt="Uber Eats">
+            <p>Bestel online via <a id="ubereats-link"
+                    href="https://www.ubereats.com/be/store/snack-alhan/9Bjvm1GnXeSIONvg3aSERA?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMkhhYWNodHNlc3RlZW53ZWclMjA0NCUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMkNoSUpoODFTcER6ZHcwY1JMbXUzU3NyN3VldyUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJnb29nbGVfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E1MC44OTc3NTA1JTJDJTIybG9uZ2l0dWRlJTIyJTNBNC40MzU4ODE5OTk5OTk5OTklN0Q%3D&ps=1">Uber
+                    Eats</a></p>
         </section>
 
     </main>

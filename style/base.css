@@ -1,4 +1,4 @@
-html{
+html {
     background-color: rgb(232, 232, 232);
 }
 
@@ -7,67 +7,81 @@ html{
     margin: 0;
     padding: 0;
 }
-.title{
-    background-image: url('/img/Background.jpg');
-    height: 10rem;
-    background-size:cover;
-    background-attachment: scroll;
+
+.banner {
+    background-image: url('/img/takeawayBanner.png');
+    background-size: cover;
     background-position: center;
+    height: 100vh;
 }
-.title h1:first-child{
+
+.title h1:first-child {
     padding-top: 1.5rem;
-    color : red;
+    color: red;
     text-decoration: underline;
     text-shadow: 0 0 5px rgba(255, 0, 0, 0.8), 0 0 10px rgba(255, 0, 0, 0.6);
 }
-.title h1{
+
+.title h1 {
     color: white;
     text-align: center;
     font-size: 3rem;
     text-shadow: 0 0 3px rgba(255, 255, 255, 0.8), 0 0 5px rgba(255, 255, 255, 0.6);
 }
+
 nav {
-    background-color: rgba(218, 255, 207, 0.367);
-    padding: 0.5rem 0;
-    border-radius: 0 0 15px 15px;
     position: sticky;
     top: 0;
-    backdrop-filter: blur(10px);
+    /* to increase the blur effect more we go to the top of the nav */
+    mask: linear-gradient(black, black, transparent);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.33);
+    height: 10vh;
+    margin-bottom: -10vh;
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
     display: flex;
     justify-content: space-evenly;
 }
+
 nav ul li {
     display: flex;
     align-items: center;
     flex: 1;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
 }
+
+nav ul li:last-child {
+    border: none;
+}
+
 nav ul li a {
     text-decoration: none;
     text-align: center;
     color: black;
     font-weight: bold;
-    border: 1px solid transparent;
-    padding: 0.5rem 0;
+    padding: 1em 0;
     flex: 1;
-    border-radius: 5px;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     color: red;
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
-    font-weight: 900;}
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    font-weight: 900;
+    transition-duration: 300ms;
+}
+
 .active {
     color: red;
-    background-color: rgba(73, 100, 68, 0.224);
-    box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
     font-size: 1.1rem;
     text-shadow: 1px 1px 20px rgba(255, 0, 0, 0.5);
-    border: 1px solid lightgray;
 }
+
 footer {
     background-color: rgb(6, 40, 1);
     color: lightgray;
