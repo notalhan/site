@@ -32,12 +32,11 @@ html {
 nav {
     position: sticky;
     top: 0;
-    /* to increase the blur effect more we go to the top of the nav */
-    mask: linear-gradient(black, black, transparent);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     background-color: rgba(255, 255, 255, 0.33);
     height: 10vh;
+    min-height: 2em;
     margin-bottom: -10vh;
 }
 
@@ -46,6 +45,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: space-evenly;
+    height: 100%;
 }
 
 nav ul li {

@@ -34,7 +34,7 @@
             <p>Een volledige maaltijd op bord. Gemengde salade, vers gebakken frieten en vlees naar keuze. Saus naar
                 keuze apart zodat alles krokant blijft.</p>
             <p class="prijs">Begint aan <span id="prijs">€ 10,00</span></p>
-            </section>
+        </section>
 
         <section>
             <h2>Mitraillettes</h2>
@@ -42,7 +42,8 @@
             <p>Frans brood met dunne krokante korst, rijk gevuld met salade, frieten en vlees naar keuze. Je kan 2
                 sauzen kiezen in je brood, extra saus komt apart.
             </p>
-            <p>Dit is de perfecte mix tussen prijs en kwantiteit. Tot vandaag niemand gezien dat nog honger was na dit brood!</p>
+            <p>Dit is de perfecte mix tussen prijs en kwantiteit. Tot vandaag niemand gezien dat nog honger was na dit
+                brood!</p>
             <p class="prijs">Begint aan <span id="prijs">€ 6,50</span></p>
         </section>
 
@@ -125,5 +126,23 @@
         <p>&copy; 2026 Furkan Alhan. Alle rechten voorbehouden.</p>
     </footer>
 </body>
+<script>
+    // easter egg after 7 clicks on footer spray doners
+    const footer = document.querySelector('footer');
+    footer.addEventListener('click', easterEgg);
+    let i = 1;
+
+    function easterEgg() {
+        i += 1;
+        if (i > 7) {
+
+            let rndColorRed = Math.floor(Math.random() * 255);
+            let rndColorGreen = Math.floor(Math.random() * 255);
+            let rndColorBlue = Math.floor(Math.random() * 255);
+            footer.style.backgroundColor = `rgb(${rndColorRed},${rndColorGreen},${rndColorBlue})`;
+            console.log(footer.style.backgroundColor);
+        }
+    }
+</script>
 
 </html>

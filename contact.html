@@ -25,7 +25,7 @@
 
         </div>
     </header> -->
-    <main class="contactmain">                  
+    <main class="contactmain">
         <section class="contactgegevens">
             <h2>Contactgegevens</h2>
             <hr>
@@ -39,7 +39,10 @@
         <section class="map-container">
             <h2>Ligging</h2>
             <hr>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5046.369256430239!2d4.534030137170662!3d50.77215095350118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3d987921e0083%3A0xd7d73805f58c716d!2sSnack%20Alhan!5e0!3m2!1sfr!2sbe!4v1772458335941!5m2!1sfr!2sbe" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5046.369256430239!2d4.534030137170662!3d50.77215095350118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3d987921e0083%3A0xd7d73805f58c716d!2sSnack%20Alhan!5e0!3m2!1sfr!2sbe!4v1772458335941!5m2!1sfr!2sbe"
+                width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
         <section class="openingsuren">
             <h2>Openingsuren</h2>
@@ -63,7 +66,8 @@
                 <label for="email">Email</label><br>
                 <input type="email" id="email" name="email" required><br><br>
                 <label for="message">Bericht</label><br>
-                <textarea id="message" name="message" rows="4" placeholder="Een bericht van hoe mooi de eigenaar is." required></textarea><br><br>
+                <textarea id="message" name="message" rows="4" placeholder="Een bericht van hoe mooi de eigenaar is."
+                    required></textarea><br><br>
                 <input type="submit" value="Verzenden">
             </form>
         </section>
@@ -73,5 +77,41 @@
         <p>&copy; 2026 Furkan Alhan. Alle rechten voorbehouden.</p>
     </footer>
 </body>
+<script>
+    // Confirmation popup that the message was sent
+    const form = document.querySelector("form");
+    console.log(form);
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const confirmation = confirm("Ben je zeker dat je deze bericht wilt verzenden ?")
+
+        if (confirmation) {
+            this.submit;
+            document.querySelector('.form-container').insertAdjacentHTML('beforeend',
+                '<p style="color: green;">U bericht was succesvol verzonden</p>');
+
+            this.reset();
+
+        }
+
+    });
+    // easter egg after 7 clicks on footer spray doners
+    const footer = document.querySelector('footer');
+    footer.addEventListener('click', easterEgg);
+    let i = 1;
+
+    function easterEgg() {
+        i += 1;
+        if (i > 7) {
+
+            let rndColorRed = Math.floor(Math.random() * 255);
+            let rndColorGreen = Math.floor(Math.random() * 255);
+            let rndColorBlue = Math.floor(Math.random() * 255);
+            footer.style.backgroundColor = `rgb(${rndColorRed},${rndColorGreen},${rndColorBlue})`;
+            console.log(footer.style.backgroundColor);
+        }
+    }
+</script>
 
 </html>
