@@ -41,12 +41,12 @@ object-fit: cover;
 
 #takeaway-link{
     color: rgb(230, 130, 0);
-    text-shadow: 1px 1px 1px rgba(255, 123, 0, 0.5);
+    text-shadow: 1px 1px 10px rgb(250, 196, 150);
     text-decoration: none;
 }
 #ubereats-link{
     color: rgb(0, 200, 0);
-    text-shadow: 1px 1px 1px rgba(0, 200, 0, 0.5);
+    text-shadow: 1px 1px 10px rgb(141, 255, 141);
     text-decoration: none;
 }
 
