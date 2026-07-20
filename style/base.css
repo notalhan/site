@@ -9,7 +9,7 @@ html {
 }
 
 .banner {
-    background-image: url('/img/takeawayBanner.png');
+    background-image: url('/site/img/takeawayBanner.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
